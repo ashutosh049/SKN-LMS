@@ -1,0 +1,35 @@
+spring:
+  application.name: skn-lms-fabrics
+  profiles:
+    active: dev
+  # Performance and tools
+  jpa:
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        generate_statistics: false # Enable hibernate session metrics and logs
+        query.in_clause_parameter_padding: true # Hibernate padding of bind parameters of every IN clause to the next power of 2
+
+
+logging:
+  level:
+    root: INFO
+    skn.lms.cricket: DEBUG
+    # For Hikari CP
+    #com.zaxxer.hikari: DEBUG
+    org.hibernate:
+      #SQL: DEBUG   # Enable to view database queries/logs
+      #type.descriptor.sql.BasicBinder: TRACE   # Enable to view database queries/logs
+      #stat: DEBUG   # Enable to view hibernate statistics and HHH000117 logs
+      #hibernate.query.interceptor.error-level: ERROR # Hibernate N+1 query detection and logging
+    org.springframework: INFO
+    org.springframework.boot: INFO
+    org.springframework.web: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: INFO
+    org.springframework.security: INFO
+    org.springframework.dao: INFO
+    org.springframework.aop: INFO
+  file:
+    path: "./logs/${spring.application.name}"
+    name: ${logging.file.path}/${spring.application.name}.log
