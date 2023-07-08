@@ -39,7 +39,7 @@ public class FabricPredicateUtil {
       if (hasText(materialCode)) {
         Join<Fabric, FabricMaterial> fabricMaterialJoin = root.join(Fabric_.FABRIC_MATERIALS);
         Join<FabricMaterial, Material> materialJoin =
-            fabricMaterialJoin.join(FabricMaterial_.FABRIC_MATERIAL_ID);
+            fabricMaterialJoin.join(FabricMaterial_.MATERIAL);
 
         Predicate materialCodeEquals =
             criteriaBuilder.equal(materialJoin.get(Material_.MATERIAL_CODE), materialCode);
