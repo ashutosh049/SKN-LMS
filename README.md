@@ -34,9 +34,9 @@ Online store where we can browse fabrics
 ## Api/Swagger Doc: 
 [skn-lms-fabrics/swagger-ui](http://localhost:3000/skn-lms-fabrics/swagger-ui/index.html)
 
-![1.PNG](skn_lms_fabrics/src/main/resources/static/swagger/1.PNG)
+![1.PNG](static/swagger/1.PNG)
 
-![2.PNG](skn_lms_fabrics/src/main/resources/static/swagger/2.PNG)
+![2.PNG](static/swagger/2.PNG)
 
 
 ## Actuator Endpoints:
