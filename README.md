@@ -1,5 +1,6 @@
-# SKN LMS:: skn_lms_fabrics
-Online store where we can browse fabrics
+# SKN LMS:: skn_lms_fabric
+
+Demontrates the usecases for microservices, Java Records as DTO, Stream APIs, JPA Specification, Rest Apis, Swagger.
 
 ### Tech Stack:
 
